@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <h1>Javascript Array Constructor</h1>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+
+        <script>
+          var stringArray=new Array() 
+          stringArray[0]="one";
+          stringArray[1]="two";
+          stringArray[2]="three";
+          stringArray[3]="four";
+
+          var numericalArray=new Array(3)
+          numericalArray[0]=1;
+          numericalArray[1]=2;
+          numericalArray[2]=3;
+          numericalArray[3]=4;
+
+          var mixedArray=new Array(1,"two",3,"four")
+            document.getElementById("p1").innerHTML=stringArray
+            document.getElementById("p2").innerHTML=numericalArray
+            document.getElementById("p3").innerHTML=mixedArray
+           
+        </script>
+    </body>
+</html>

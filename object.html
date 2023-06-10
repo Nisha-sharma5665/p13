@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <h1>creating object</h1>
+        <p id="p1"></p>
+        <script>
+         var emptyObject={} 
+         var person={firstName:"Nisha"};
+         //object with single method
+         var message={
+            showMessage:function(val){alert(val)}
+         }
+
+         //object with property and method
+         var person={
+firstName:"Nisha",
+lastName:"Sharma",
+age:24,
+getFullName:function(){
+    return this.firstName+''+this.lastName
+}
+         }
+         document.getElementById("p1").innerHTML=person.firstName
+         document.getElementById("p1").innerHTML=person.lastName
+         document.getElementById("p1").innerHTML=person.age
+
+        </script>
+    </body>
+</html>
